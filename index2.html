@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Phones | Red Magic & ROG</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:'Segoe UI', Arial, sans-serif;
+  background:#060606;
+  color:#fff;
+}
+
+/* ANIMACIONES */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes glow{
+  0%{box-shadow:0 0 10px red;}
+  50%{box-shadow:0 0 30px red;}
+  100%{box-shadow:0 0 10px red;}
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(90deg,#8b0000,#000);
+  padding:60px 20px;
+  text-align:center;
+  animation:fadeUp 1.2s ease;
+}
+
+header h1{
+  font-size:2.8rem;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:1.2rem;
+  opacity:0.9;
+}
+
+/* CONTENEDOR */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* SECCIÓN INTRO */
+.intro{
+  text-align:center;
+  margin-bottom:50px;
+  animation:fadeUp 1.5s ease;
+}
+
+.intro h2{
+  font-size:2.2rem;
+  margin-bottom:15px;
+}
+
+.intro p{
+  font-size:1.1rem;
+  line-height:1.7;
+  opacity:0.95;
+}
+
+/* PRODUCTOS */
+.product{
+  display:flex;
+  flex-wrap:wrap;
+  background:#111;
+  border-radius:20px;
+  margin-bottom:50px;
+  overflow:hidden;
+  animation:fadeUp 1.8s ease;
+}
+
+.product img{
+  width:100%;
+  max-width:450px;
+  object-fit:cover;
+  transition:0.5s;
+}
+
+.product img:hover{
+  transform:scale(1.05);
+}
+
+.product-content{
+  padding:30px;
+  flex:1;
+}
+
+.product h2{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.product p{
+  font-size:1.05rem;
+  line-height:1.7;
+}
+
+.features{
+  list-style:none;
+  padding:0;
+  margin:20px 0;
+}
+
+.features li{
+  margin-bottom:10px;
+}
+
+/* BOTÓN */
+.btn{
+  display:inline-block;
+  padding:14px 35px;
+  background:red;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+  animation:glow 2s infinite;
+}
+
+.btn:hover{
+  background:#c40000;
+}
+
+/* SECCIÓN EXTRA */
+.extra{
+  background:#0b0b0b;
+  border-radius:20px;
+  padding:40px 20px;
+  text-align:center;
+  animation:fadeUp 2s ease;
+}
+
+.extra h2{
+  font-size:2rem;
+  margin-bottom:15px;
+}
+
+.extra p{
+  font-size:1.1rem;
+  line-height:1.7;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  text-align:center;
+  padding:25px;
+  opacity:0.85;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>SMARTPHONES GAMING PRO</h1>
+  <p>Potencia extrema, diseño futurista y rendimiento sin límites</p>
+</header>
+
+<div class="container">
+
+  <section class="intro">
+    <h2>La nueva era del gaming móvil</h2>
+    <p>
+      Los smartphones gaming están diseñados para jugadores exigentes.
+      Ofrecen mayor potencia, mejor refrigeración y una experiencia visual
+      impresionante para dominar cualquier juego.
+    </p>
+  </section>
+
+  <!-- RED MAGIC -->
+  <section class="product">
+    <img src="https://i.imgur.com/0vZ6Z6N.png" alt="Red Magic 10 Pro">
+    <div class="product-content">
+      <h2>🔥 Red Magic 10 Pro</h2>
+      <p>
+        El Red Magic 10 Pro es un smartphone creado para gamers extremos.
+        Su potencia y sistema de refrigeración avanzada permiten jugar
+        durante horas sin interrupciones ni sobrecalentamiento.
+      </p>
+      <ul class="features">
+        <li>⚡ Rendimiento extremo para juegos pesados</li>
+        <li>❄️ Refrigeración avanzada</li>
+        <li>🎮 Diseño gamer agresivo</li>
+        <li>🚀 Respuesta ultra rápida</li>
+      </ul>
+      <a href="#" class="btn">Comprar ahora</a>
+    </div>
+  </section>
+
+  <!-- ROG -->
+  <section class="product">
+    <img src="https://i.imgur.com/7bKX5zR.png" alt="ROG Phone 9 Pro">
+    <div class="product-content">
+      <h2>🎮 ASUS ROG Phone 9 Pro</h2>
+      <p>
+        El ASUS ROG Phone 9 Pro está diseñado para el gaming competitivo.
+        Ofrece gráficos avanzados, controles optimizados y una experiencia
+        profesional para jugadores de alto nivel.
+      </p>
+      <ul class="features">
+        <li>🔥 Potencia optimizada para eSports</li>
+        <li>🕹️ Controles especiales gamer</li>
+        <li>🎨 Gráficos fluidos y realistas</li>
+        <li>💎 Diseño premium futurista</li>
+      </ul>
+      <a href="#" class="btn">Comprar ahora</a>
+    </div>
+  </section>
+
+  <section class="extra">
+    <h2>¿Por qué elegir un smartphone gaming?</h2>
+    <p>
+      Un smartphone gaming no solo es para jugar.
+      También es ideal para multitarea, creación de contenido,
+      videos en alta calidad y máximo rendimiento diario.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 | Página web publicitaria gamer | Proyecto educativo</p>
+</footer>
+
+</body>
+</html>
