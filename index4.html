@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smartphones Gaming PRO</title>
+
+<style>
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#050505;
+  color:#fff;
+}
+
+/* ANIMACIONES */
+@keyframes entrada{
+  from{opacity:0; transform:translateY(50px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes brillo{
+  0%{box-shadow:0 0 10px red;}
+  50%{box-shadow:0 0 30px red;}
+  100%{box-shadow:0 0 10px red;}
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(90deg,#8b0000,#000);
+  padding:60px 20px;
+  text-align:center;
+  animation:entrada 1s ease;
+}
+
+header h1{
+  font-size:2.6rem;
+}
+
+header p{
+  font-size:1.2rem;
+  opacity:0.9;
+}
+
+/* CONTENEDOR */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* PRODUCTOS */
+.product{
+  display:flex;
+  flex-wrap:wrap;
+  background:#111;
+  border-radius:20px;
+  margin-bottom:50px;
+  overflow:hidden;
+  animation:entrada 1.5s ease;
+}
+
+.product img{
+  width:100%;
+  max-width:450px;
+  object-fit:cover;
+  transition:0.5s;
+}
+
+.product img:hover{
+  transform:scale(1.08);
+}
+
+.product-content{
+  padding:30px;
+  flex:1;
+}
+
+.product h2{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.product p{
+  font-size:1.05rem;
+  line-height:1.7;
+}
+
+.features{
+  list-style:none;
+  padding:0;
+  margin:20px 0;
+}
+
+.features li{
+  margin-bottom:10px;
+}
+
+/* BOTÓN */
+.btn{
+  display:inline-block;
+  padding:14px 35px;
+  background:red;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+  animation:brillo 2s infinite;
+}
+
+.btn:hover{
+  background:#c40000;
+}
+
+/* EXTRA */
+.extra{
+  background:#0b0b0b;
+  border-radius:20px;
+  padding:40px;
+  text-align:center;
+  animation:entrada 2s ease;
+}
+
+footer{
+  background:black;
+  text-align:center;
+  padding:25px;
+  opacity:0.85;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>SMARTPHONES GAMING DE ALTO RENDIMIENTO</h1>
+  <p>Potencia, diseño y tecnología para gamers reales</p>
+</header>
+
+<div class="container">
+
+  <!-- RED MAGIC -->
+  <section class="product">
+    <img src="redmagic10pro.png" alt="Red Magic 10 Pro">
+    <div class="product-content">
+      <h2>🔥 Red Magic 10 Pro</h2>
+      <p>
+        Smartphone diseñado para gamers extremos. Su potencia avanzada y
+        refrigeración inteligente permiten jugar durante horas sin perder rendimiento.
+      </p>
+      <ul class="features">
+        <li>⚡ Rendimiento extremo para juegos exigentes</li>
+        <li>❄️ Sistema de refrigeración avanzada</li>
+        <li>🎮 Diseño gamer futurista</li>
+        <li>🚀 Respuesta ultra rápida</li>
+      </ul>
+      <a href="#" class="btn">Comprar ahora</a>
+    </div>
+  </section>
+
+  <!-- ROG -->
+  <section class="product">
+    <img src="rogphone9pro.png" alt="ROG Phone 9 Pro">
+    <div class="product-content">
+      <h2>🎮 ASUS ROG Phone 9 Pro</h2>
+      <p>
+        El smartphone ideal para gaming competitivo.
+        Ofrece gráficos fluidos, controles optimizados y
+        una experiencia profesional de alto nivel.
+      </p>
+      <ul class="features">
+        <li>🔥 Potencia optimizada para eSports</li>
+        <li>🕹️ Controles gamer avanzados</li>
+        <li>🎨 Calidad gráfica superior</li>
+        <li>💎 Diseño premium y agresivo</li>
+      </ul>
+      <a href="#" class="btn">Comprar ahora</a>
+    </div>
+  </section>
+
+  <section class="extra">
+    <h2>¿Por qué elegir un smartphone gaming?</h2>
+    <p>
+      Un smartphone gaming ofrece mayor potencia, mejor refrigeración
+      y una experiencia visual superior, ideal para jugar, crear contenido
+      y realizar múltiples tareas sin interrupciones.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 | Página web publicitaria gamer | Proyecto educativo</p>
+</footer>
+
+</body>
+</html>
